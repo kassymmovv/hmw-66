@@ -3,7 +3,7 @@ import './OrderItem.css';
 
 const OrderItem = props => {
 
-    if (Math.random() > 0.5)throw  new Error('DAROVA');
+    if (Math.random() > 0.7)throw  new Error('Something went wrong');
 
     const ingredients = props.ingredients && Object.keys(props.ingredients).map(igName => (
         <span key={igName}>{igName} ({props.ingredients[igName]})</span>

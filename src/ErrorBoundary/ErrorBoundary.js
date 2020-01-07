@@ -11,8 +11,9 @@ class ErrorBaundaru extends Component {
     }
 
     render() {
+        console.log(this.state.errorMessage);
         if (this.state.hasError){
-            return <div>NOT FOUND</div>
+            return <div>{String(this.state.errorMessage)}</div>
         }else {
             return this.props.children
         }
